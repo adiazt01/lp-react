@@ -1,0 +1,58 @@
+@import "./App.scss";
+
+.package {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .package-title {
+    color: $title-color;
+    font-size: 1.5em;
+  }
+
+  .package-p {
+    color: $info-color;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .package-cards {
+    width: 100%;
+    margin-top: 30px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  
+    .package-card{
+        width: 80%;
+        max-width: 240px;
+        border-radius: 3px;
+        background-color: $primary-color;
+        padding: 20px 15px 20px 15px; 
+        text-align: center;
+        border: 3px solid green;
+
+        .package-card-title{
+            font-size: 1.3em;
+            font-weight: 800;
+            color: $title-color;
+            margin-bottom: 10px;
+        }
+
+        .package-card-info{
+            font-size: 1em;
+            color: $info-color;
+            margin-bottom: 10px;
+        }
+
+        .package-card-price{
+            font-size: 1.5em;
+            font-weight: 700;
+            color: green;
+        }
+    }
+}
+}
