@@ -19,13 +19,13 @@ export const Benefits = () => {
   ];
 
   return (
-    <section className="benefits">
+    <section className="benefits" id="Servicios">
       <div className="benefits-section">
         <h2 className="benefits-title">Beneficios</h2>
         <ul className="benefits-lits">
-          {benefits.map((benefit) => (
-            <li className="benefits-lits-item" key={benefit.benefit}>
-              {benefit.benefit}
+          {benefits.map((benefit, index) => (
+            <li className="benefits-lits-item" key={index}>
+              {`⭐ ${benefit.benefit}`}
               <hr className="benefits-lits-line" />
             </li>
           ))}

@@ -10,7 +10,8 @@
   .welcome-info {
     .welcome-title {
       text-align: center;
-      font-weight: 700;
+      font-size: clamp(10px, 7vw, 30px);
+      font-weight: 400;
       margin-bottom: 10px;
       color: $title-color;
     }
@@ -19,7 +20,7 @@
       text-align: center;
       margin-bottom: 20px;
       color: $info-color;
-      font-size: 1.1em;
+      font-size: clamp(5px, 5vw, 20px);
     }
 
     .welcome-form {
@@ -54,9 +55,9 @@
         border: 0px;
         color: $info-color;
         background-color: $primary-color;
-        transition: .3s;
+        transition: 0.3s;
         cursor: pointer;
-        &:hover{
+        &:hover {
           transform: scale(1.1);
           box-shadow: 0px 5px 8px rgba($color: #000000, $alpha: 0.3);
         }
@@ -67,6 +68,7 @@
   .welcome-img {
     width: 90%;
     max-width: 300px;
+    filter: drop-shadow(0 0 0.75rem $primary-color);
   }
 }
 
@@ -77,12 +79,10 @@
 
     .welcome-info {
       width: 50%;
-      .welcome-title {
-        font-size: 1.5em;
-      }
       .welcome-p {
-        width: 50%;
+        width: 90%;
         margin: auto auto 40px;
+        text-align: left;
       }
 
       .welcome-form {
@@ -93,7 +93,7 @@
           max-width: 250px;
         }
 
-        .welcome-send{
+        .welcome-send {
           margin-top: 20px;
           max-width: 300px;
           padding: 10px 15%;

@@ -1,7 +1,7 @@
 import "/src/styles/navbar.scss";
 
 export const Navbar = () => {
-  const link = [{ label: "Home" }, { label: "Servicios" }];
+  const link = [{ label: "Home" }, { label: "Servicios" }, { label: "Paquetes" }];
 
   return (
     <header className="header">

@@ -9,6 +9,7 @@
   padding: 5px;
   top: 0;
   background-color: $primary-color;
+  z-index: 5;
 
   .header_logo_title {
     font-family: "Bruno Ace SC", cursive;
@@ -24,26 +25,28 @@
     width: 70%;
     justify-content: space-evenly;
 
-    .header_link{
-        text-decoration: none;
-        color: $link-color;
-        font-size: 1em;
+    .header_link {
+      text-decoration: none;
+      color: $link-color;
+      font-size: clamp(15px, 3vw, 20px);
+      transition: .3s;
+
+      &:hover {
+        transform: scale(1.1);
+        color: white;
+      }
     }
-}
+  }
 }
 
 @media (min-width: 768px) {
-  .header{
-    padding: 10px;
+  .header {
+    padding: 10px 20px;
     flex-direction: row;
     justify-content: space-between;
-    
-     .header_logo_title{
-        margin-left: 20px;
-      }
 
-      .header_links{
-        width: 15%;
-      }
+    .header_links {
+      width: 20%;
+    }
   }
 }

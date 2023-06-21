@@ -2,9 +2,9 @@ import "/src/styles/welcome.scss";
 
 export const Welcome = () => {
   return (
-    <section className="welcome">
+    <section className="welcome" id="Home">
       <div className="welcome-info">
-        <h2 className="welcome-title">Creamos mundos, creamos sueños.</h2>
+        <h2 className="welcome-title">Creamos mundos, creamos sueños 👾</h2>
         <p className="welcome-p">
           Queremos que nuestros juegos sean más que entretenimiento, sino
           también una forma de expresarse, explorar y conectar con otros.

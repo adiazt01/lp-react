@@ -1,0 +1,13 @@
+@import "./App.scss";
+
+.Footer{
+    margin-top: 100px;
+    height: 10vh;
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $info-color;
+    font-size: clamp(10px, 4vw, 20px);
+}
